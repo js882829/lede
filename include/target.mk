@@ -23,8 +23,7 @@ DEFAULT_PACKAGES:=\
 	opkg \
 	uci \
 	uclient-fetch \
-	urandom-seed \
-	urngd
+	urandom-seed
 
 ifneq ($(CONFIG_SELINUX),)
 DEFAULT_PACKAGES+=busybox-selinux procd-selinux
@@ -51,7 +50,7 @@ DEFAULT_PACKAGES.router:=\
 	default-settings luci luci-app-ddns luci-app-upnp luci-app-autoreboot \
 	luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind \
 	luci-app-vlmcsd luci-app-wol luci-app-ramfree \
-	luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq \
+	luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol \
 	ddns-scripts_aliyun ddns-scripts_dnspod
 
 ifneq ($(DUMP),)
